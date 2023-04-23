@@ -1,14 +1,16 @@
 package xyz.rajik.graphics;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.awt.*;
 
 @Data
+@NoArgsConstructor
 public class Brick extends DisplayObject {
     boolean isBroken; // can u hear the silence can u see the dark can u fix the broken can u feel my heart
 
-    public Brick(double x, double y, double width, double height, GameColor color) {
+    public Brick(int x, int y, int width, int height, GameColor color) {
         this.x = x;
         this.y = y;
         this.maxX = x + width;
@@ -24,11 +26,11 @@ public class Brick extends DisplayObject {
     @Override
     protected void draw(Graphics2D g) {
         if (!isBroken) {
-            g.setColor(color);
-            g.fillRect((int)x, (int)y, (int)width, (int)height);
+            g.setColor(gameColor.toAwtColor());
+            g.fillRect(x, y, width, height);
             g.setColor(Color.BLACK);
             g.setStroke(new BasicStroke(4));
-            g.drawRect((int)x, (int)y, (int)width, (int)height);
+            g.drawRect(x, y, width, height);
         }
     }
 }

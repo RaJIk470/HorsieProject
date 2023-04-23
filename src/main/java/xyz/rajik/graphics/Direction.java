@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Direction {
-    double x;
-    double y;
+public class Direction implements Serializable {
+    int x;
+    int y;
 
     public void setUp() {
         y = -1;
@@ -39,8 +41,4 @@ public class Direction {
         y = 0;
     }
 
-    public void setAngle(double angle) {
-        x = Math.cos(angle);
-        y = Math.sin(angle);
-    }
 }

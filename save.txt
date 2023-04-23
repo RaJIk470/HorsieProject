@@ -1,0 +1,432 @@
+---
+balls:
+  balls:
+  - x: 200
+    "y": 556
+    maxX: 250
+    maxY: 606
+    width: 50
+    height: 50
+    gameColor:
+      red: 0
+      green: 0
+      blue: 0
+    direction:
+      x: -1
+      "y": 1
+    speed: 10
+    collisional: true
+players:
+  players:
+  - paddle:
+      x: 348
+      "y": 700
+      maxX: 498
+      maxY: 750
+      width: 150
+      height: 50
+      gameColor:
+        red: 125
+        green: 125
+        blue: 0
+      direction:
+        x: 0
+        "y": 0
+      speed: 5
+      collisional: true
+walls:
+  walls:
+  - x: 0
+    "y": 0
+    maxX: 800
+    maxY: 8
+    width: 800
+    height: 8
+    gameColor: null
+    collisional: true
+  - x: 0
+    "y": 0
+    maxX: 8
+    maxY: 800
+    width: 8
+    height: 800
+    gameColor: null
+    collisional: true
+  - x: 792
+    "y": 0
+    maxX: 800
+    maxY: 800
+    width: 8
+    height: 800
+    gameColor: null
+    collisional: true
+  - x: 0
+    "y": 792
+    maxX: 800
+    maxY: 800
+    width: 800
+    height: 8
+    gameColor: null
+    collisional: true
+bricks:
+  bricks:
+  - x: 65
+    "y": 45
+    maxX: 175
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 175
+    "y": 45
+    maxX: 285
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 285
+    "y": 45
+    maxX: 395
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 395
+    "y": 45
+    maxX: 505
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 505
+    "y": 45
+    maxX: 615
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 615
+    "y": 45
+    maxX: 725
+    maxY: 95
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 65
+    "y": 95
+    maxX: 175
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 175
+    "y": 95
+    maxX: 285
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 285
+    "y": 95
+    maxX: 395
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 395
+    "y": 95
+    maxX: 505
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 505
+    "y": 95
+    maxX: 615
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 615
+    "y": 95
+    maxX: 725
+    maxY: 145
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 65
+    "y": 145
+    maxX: 175
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 175
+    "y": 145
+    maxX: 285
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 285
+    "y": 145
+    maxX: 395
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 395
+    "y": 145
+    maxX: 505
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 505
+    "y": 145
+    maxX: 615
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 615
+    "y": 145
+    maxX: 725
+    maxY: 195
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 65
+    "y": 195
+    maxX: 175
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 175
+    "y": 195
+    maxX: 285
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 285
+    "y": 195
+    maxX: 395
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 395
+    "y": 195
+    maxX: 505
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 505
+    "y": 195
+    maxX: 615
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 615
+    "y": 195
+    maxX: 725
+    maxY: 245
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 65
+    "y": 245
+    maxX: 175
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: false
+    collisional: true
+  - x: 175
+    "y": 245
+    maxX: 285
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 285
+    "y": 245
+    maxX: 395
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 395
+    "y": 245
+    maxX: 505
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 505
+    "y": 245
+    maxX: 615
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true
+  - x: 615
+    "y": 245
+    maxX: 725
+    maxY: 295
+    width: 110
+    height: 50
+    gameColor:
+      red: 233
+      green: 233
+      blue: 233
+    broken: true
+    collisional: true

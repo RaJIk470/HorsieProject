@@ -1,5 +1,6 @@
 package xyz.rajik.graphics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import xyz.rajik.Game;
@@ -12,9 +13,9 @@ import java.awt.*;
 @NoArgsConstructor
 public class Paddle extends DisplayObject implements Moveable {
     private Direction direction;
-    private Double speed;
-    private final double SPEED_MULTIPLIER = 100;
-    public Paddle(double x, double y, double width, double height, double speed, GameColor color) {
+    private int speed;
+    private static final double SPEED_MULTIPLIER = 100;
+    public Paddle(int x, int y, int width, int height, int speed, GameColor color) {
         this.x = x;
         this.y = y;
         this.width = width;
@@ -35,7 +36,7 @@ public class Paddle extends DisplayObject implements Moveable {
     }
     @Override
     protected void draw(Graphics2D g) {
-        g.setColor(color);
+        g.setColor(gameColor.toAwtColor());
         g.fillRect((int)x, (int)y, (int)width, (int)height);
         g.setColor(Color.BLACK);
         g.setStroke(new BasicStroke(4));

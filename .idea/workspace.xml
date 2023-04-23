@@ -4,25 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e999078-f652-4354-816b-ca4199762494" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6e999078-f652-4354-816b-ca4199762494" name="Changes" comment="asdf">
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/FileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/GameAnnouncer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonFormatSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/SerializationData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/StatusBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/TextFormatSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/StatusBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Balls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Balls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Bricks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Bricks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/DisplayObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/DisplayObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Serializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/CollisionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/CollisionEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/DisplayObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/DisplayObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameFieldWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameFieldWall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +38,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -105,7 +109,25 @@
       <workItem from="1681396671477" duration="8799000" />
       <workItem from="1681561245453" duration="10000" />
       <workItem from="1681563066408" duration="10000" />
+      <workItem from="1681636279953" duration="676000" />
+      <workItem from="1681660559257" duration="9065000" />
+      <workItem from="1681670530674" duration="1133000" />
+      <workItem from="1681678074245" duration="758000" />
+      <workItem from="1681679581053" duration="71000" />
+      <workItem from="1681710409257" duration="788000" />
+      <workItem from="1681711401890" duration="1583000" />
+      <workItem from="1681713183337" duration="2102000" />
+      <workItem from="1681725907521" duration="57000" />
+      <workItem from="1681925065822" duration="9000" />
     </task>
+    <task id="LOCAL-00001" summary="asdf">
+      <created>1681636334338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681636334338</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +143,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdf" />
   </component>
 </project>

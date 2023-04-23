@@ -1,6 +1,7 @@
 package xyz.rajik;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import xyz.rajik.graphics.Paddle;
 
 import java.awt.event.KeyAdapter;
@@ -8,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 
 @Data
+@NoArgsConstructor
 public class Player extends KeyAdapter {
     private Paddle paddle;
 

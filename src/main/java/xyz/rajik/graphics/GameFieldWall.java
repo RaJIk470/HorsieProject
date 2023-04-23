@@ -1,9 +1,14 @@
 package xyz.rajik.graphics;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.awt.*;
 
+@Data
+@NoArgsConstructor
 public class GameFieldWall extends DisplayObject {
-    public GameFieldWall(double x, double y, double width, double height) {
+    public GameFieldWall(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;
         this.maxX = x + width;
@@ -15,6 +20,6 @@ public class GameFieldWall extends DisplayObject {
     protected void draw(Graphics2D g) {
         g.setColor(Color.BLACK);
         g.setStroke(new BasicStroke(20));
-        g.drawRect((int)x, (int)y, (int)width, (int)height);
+        g.drawRect(x, y, width, height);
     }
 }
