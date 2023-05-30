@@ -27,11 +27,22 @@ public class Paddle extends DisplayObject implements Moveable {
         this.color = color.toAwtColor();
         direction = new Direction();
     }
+
+    @Override
+    public void handleCollisionEvent(CollisionEvent event) {
+        if (event.displayObject instanceof Bonus bonus) {
+            if (!bonus.isActive()) return;
+            bonus.setActive(false);
+            bonus.applyBonus();
+        }
+    }
+
     public void move(double dt) {
-        if (direction.getX() > 0 && maxX >= 790) return;
+        if (direction.getX() > 0 && maxX >= 2550) return;
         if (direction.getX() < 0 && x <= 10) return;
             x += direction.getX() * speed * dt * SPEED_MULTIPLIER;
-            maxX += direction.getX() * speed * dt * SPEED_MULTIPLIER;
+            //maxX += direction.getX() * speed * dt * SPEED_MULTIPLIER;
+            maxX = x + width;
         //y += direction.getY() * speed * dt * SPEED_MULTIPLIER;
     }
     @Override

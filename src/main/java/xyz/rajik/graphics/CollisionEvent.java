@@ -5,8 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class CollisionEvent {
-    DisplayObject displayObject;
+public class CollisionEvent extends Event {
+    public CollisionEvent(DisplayObject displayObject) {
+       this.displayObject = displayObject;
+    }
 }

@@ -3,6 +3,8 @@ package xyz.rajik.graphics;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import xyz.rajik.Game;
+import xyz.rajik.collections.Bonuses;
 
 import java.awt.*;
 
@@ -27,19 +29,28 @@ public class Ball extends DisplayObject implements Moveable {
         direction.setRight();
     }
     public void move(double dt) {
-        x += direction.getX() * speed * (dt * SPEED_MULTIPLIER);
-        y += direction.getY() * speed * (dt * SPEED_MULTIPLIER);
+        int bonus = 0;
+        if (Bonuses.isIncreaseSpeedActive) bonus += 5;
+        if (Bonuses.isDecreaseSpeedActive) bonus -= 5;
+        x += direction.getX() * (speed + bonus) * (dt * SPEED_MULTIPLIER);
+        y += direction.getY() * (speed + bonus) * (dt * SPEED_MULTIPLIER);
         maxX = x + width;
         maxY = y + height;
     }
 
     @Override
+    protected void draw(Graphics2D g) {
+        g.setColor(gameColor.toAwtColor());
+        g.fillOval((int)x, (int)y, (int)width, (int)height);
+    }
+
+    @Override
     public void handleCollisionEvent(CollisionEvent event) {
         DisplayObject displayObject = event.displayObject;
-        if (displayObject instanceof Brick) {
-            Brick brick = (Brick) displayObject;
+        if (displayObject instanceof Bonus) return;
+        if (displayObject instanceof Brick brick) {
+            if (Bonuses.isDisableCollisionActive) return;
             if (brick.isBroken) return;
-            brick.isBroken = true;
         }
         double x2 = displayObject.x;
         double y2 = displayObject.y;
@@ -54,11 +65,5 @@ public class Ball extends DisplayObject implements Moveable {
             direction.setUp();
         if (maxX > x2 && x < x2)
             direction.setLeft();
-    }
-
-    @Override
-    protected void draw(Graphics2D g) {
-        g.setColor(gameColor.toAwtColor());
-        g.fillOval((int)x, (int)y, (int)width, (int)height);
     }
 }

@@ -1,11 +1,15 @@
 package xyz.rajik.graphics;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import xyz.rajik.Game;
 
 import javax.swing.*;
 import java.awt.*;
 
 @Data
+@NoArgsConstructor
 public class StatusBar extends DisplayObject {
     private static String scoreText = "Score: ";
     private static String bricksLeftText = "Bricks left: ";
@@ -26,8 +30,15 @@ public class StatusBar extends DisplayObject {
     @Override
     protected void draw(Graphics2D g) {
         g.setColor(Color.BLACK);
-        g.setFont(new Font("Sans", Font.PLAIN, 22));
-        g.drawString(scoreText + score, (int) x, (int) y);
-        g.drawString(bricksLeftText + bricksLeft, (int) x + 100, (int) y);
+        g.setFont(new Font("Sans", Font.PLAIN, 30));
+        g.drawString(scoreText + score,  x,  y);
+        g.drawString(bricksLeftText + bricksLeft,  x + 150,  y);
+        g.drawString("Difficulty: " + Game.game.getMenu().getDifficulty().getSelectedItem(),  x + 370,  y);
+        g.drawString("Res: " + Game.game.getGameField().getMenu().getScreenSize().getSelectedItem(),  x + 650,  y);
+        g.drawString("Name: " + Game.game.playerName,  x + 900,  y);
+    }
+
+    public void addScore(int score) {
+        this.score += score;
     }
 }

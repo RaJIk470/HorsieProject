@@ -1,12 +1,10 @@
-package xyz.rajik;
+package xyz.rajik.proxy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import xyz.rajik.collections.Balls;
-import xyz.rajik.collections.Bricks;
-import xyz.rajik.collections.Players;
-import xyz.rajik.collections.Walls;
+import xyz.rajik.graphics.StatusBar;
+import xyz.rajik.collections.*;
 
 @Data
 @NoArgsConstructor
@@ -16,4 +14,6 @@ public class SerializationData {
     private Players players;
     private Walls walls;
     private Bricks bricks;
+    private Bonuses bonuses;
+    private StatusBar statusBar;
 }

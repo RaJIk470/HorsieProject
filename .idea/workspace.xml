@@ -5,28 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e999078-f652-4354-816b-ca4199762494" name="Changes" comment="asdf">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/GameAnnouncer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonFormatSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/SerializationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/StatusBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/TextFormatSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/StatusBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/ActivateBonusEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/AddScoreEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Bonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/BonusType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameOverEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.json" beforeDir="false" afterPath="$PROJECT_DIR$/save.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/GameAnnouncer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/GameAnnouncer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonFormatSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/proxy/JsonFormatSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/proxy/JsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/SerializationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/proxy/SerializationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/TextFormatSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/proxy/TextFormatSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Bricks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/collections/Bricks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/DisplayObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/DisplayObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/CollisionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/CollisionEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameFieldWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/GameFieldWall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/StatusBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/rajik/graphics/StatusBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,21 +66,28 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rajik/repos/battleshipsgui&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.rajik.graphics" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xyz.rajik.Main" />
       <module name="ark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xyz.rajik.*" />
+          <option name="PATTERN" value="xyz.rajik.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

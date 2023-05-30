@@ -2,13 +2,18 @@ package xyz.rajik.graphics;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import xyz.rajik.Game;
+import xyz.rajik.collections.Bonuses;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 public class Brick extends DisplayObject {
     boolean isBroken; // can u hear the silence can u see the dark can u fix the broken can u feel my heart
+    private List<Bonus> bonusList = new ArrayList<>();
 
     public Brick(int x, int y, int width, int height, GameColor color) {
         this.x = x;
@@ -22,6 +27,19 @@ public class Brick extends DisplayObject {
         this.isBroken = false;
     }
 
+    @Override
+    public void handleCollisionEvent(CollisionEvent event) {
+        if (!isBroken && event.displayObject instanceof Ball) {
+            isBroken = true;
+            int points = 2;
+            if (Bonuses.isX2Active) points *= 2;
+            Game.game.handleEvent(new AddScoreEvent(points * Game.game.scoreMultiplier));
+            getBonusList().stream().forEach(bonus -> bonus.handleEvent(new ActivateBonusEvent()));
+            if (Game.game.checkIfGameOver()) {
+                Game.game.handleEvent(new GameOverEvent());
+            }
+        }
+    }
 
     @Override
     protected void draw(Graphics2D g) {

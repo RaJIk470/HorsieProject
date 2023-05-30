@@ -2,9 +2,10 @@ package xyz.rajik.graphics;
 
 import xyz.rajik.Game;
 
-public abstract class Event {
-    DisplayObject displayObject;
+public class GameOverEvent extends Event {
 
+    @Override
     public void execute(Game game) {
+        Game.game.gameOver();
     }
 }

@@ -1,5 +1,5 @@
 package xyz.rajik;public class Main {
     public static void main(String[] args) {
-        new Game(800, 800).start();
+        new Game(2560, 1600).start();
     }
 }

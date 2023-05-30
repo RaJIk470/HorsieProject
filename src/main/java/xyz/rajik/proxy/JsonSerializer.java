@@ -1,8 +1,9 @@
-package xyz.rajik;
+package xyz.rajik.proxy;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
+import xyz.rajik.Serializer;
 import xyz.rajik.collections.DisplayObjects;
 import xyz.rajik.graphics.DisplayObject;
 
